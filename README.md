@@ -64,6 +64,15 @@ Each extensible function has has 5 phases:
 
 ### Setting up the core functionality
 * setCoreFunctionality
+Example:
+
+
+### Running the extensible function
+* run
+Example:
+```javascript
+showSidebar.run()
+```
 
 ### Extending function
 * extendAtTheBeginning
