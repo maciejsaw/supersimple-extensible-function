@@ -25,7 +25,7 @@ With extensibleFunction, you can keep the fix for the popups in the same file/fo
 
 ## Quick start
 
-1) Download the script and use it in your code
+1) [Download the script](https://raw.githubusercontent.com/maciejsaw/supersimple-extensible-function/master/js/supersimple-extensible-function.js) and use it in your code
 
 2) Declare the extensible function
 ```javascript
