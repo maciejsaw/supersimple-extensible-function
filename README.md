@@ -16,7 +16,7 @@ Take a look at this simple scenario when we add a sidebar to a website. This wil
 
 [View demo on Codepen](http://codepen.io/maciejsawicki/pen/VmogqW)
 
-Without the extensibleFunction, on DAY 3 you would scatter your code accross different files. After some time a simple function to open a sidebar will become bloated and harder to maintain.  
+Without the extensibleFunction, on DAY 3 you would scatter your code accross different files. If you continue this proccess, after some time the initially simple function to open a sidebar will become bloated and harder to maintain.  
 
 With extensibleFunction, you can keep the fix for the popups in the same file/folder that is responsible for popups. Consider organising your folders per "user story", for example
 * ShowingSidebar
