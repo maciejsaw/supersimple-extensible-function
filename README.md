@@ -18,14 +18,12 @@ you can chunk it into separate function submodules that can be added separately.
 ```javascript
 showSidebar = new extensibleFunction();
 ```
-
 3. Set its core functionality
 ```javascript
 showSidebar.setCoreFunctionality(function() {
   $('.sidebar').toggleClass('hidden');
 });
 ```
-
 4. Bind the function wherever you want
 ```javascript
 $(document).on('click', '.sidebar-button', function() {
@@ -33,7 +31,6 @@ $(document).on('click', '.sidebar-button', function() {
   showSidebar.run(); 
 });
 ```
-
 5. In future you can extend the function in different place
 ```javascript
 showSidebar.extendBefore(function() {
