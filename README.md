@@ -64,8 +64,6 @@ Each extensible function has 5 phases:
 
 ### Setting up the core functionality
 * setCoreFunctionality
-Example:
-
 
 ### Running the extensible function
 * run
