@@ -8,7 +8,21 @@ you can chunk it into separate function submodules that can be added separately.
 * You can disable the "extension" when needed for debugging.
 
 ## Demo with annotations
-[View on Codepen](http://codepen.io/maciejsawicki/pen/VmogqW)
+Take a look at this simple scenario when we add a sidebar to a website. This will show you what can happen in several days when you work on your code, and how the extensibleFunction can help you to organise the code
+* DAY 1: First, we only add a basic functionality, which is showing and hiding the sidebr 
+* DAY 2: Our product onwer asked to add a popup.
+* DAY 3: We found out a bug that popup overlaps the menu. We decided that before the menu is opened, all the popups/tooltips should be hidden.
+* DAY 4: Our product owner asked to add analytics tracking. 
+
+Without the extensibleFunction, on DAY 3 you would scatter your code accross different files. After some time a simple function to open a sidebar will become bloated and harder to maintain.  
+
+With extensibleFunction, you can keep the fix for the popups in the same file/folder that is responsible for popups. Consider organising your folders per "user story", for example
+* ShowingSidebar
+* ShowingPopup
+* SidebarAnalytics
+
+[View demo on Codepen](http://codepen.io/maciejsawicki/pen/VmogqW)
+
 
 ## Quick start
 
@@ -42,6 +56,22 @@ showSidebar.extendBefore(function() {
 ```
 
 ## List of methods
+Each extensible function has has 5 phases:
+- at the beginning
+- before core functionality
+- core functionality
+- after core functionality
+- at the end
+
+### Setting up the core functionality
+* setCoreFunctionality
+
+### Extending function
+* extendAtTheBeginning
+* extendBefore
+* extendCore
+* extendAfter
+* extendAtTheEnd
 
 ## Need a variable that will be accessible for all the "extensions"?
 You can store it in the function object under ```showSidebar.exportedVars```
