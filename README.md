@@ -14,15 +14,14 @@ Take a look at this simple scenario when we add a sidebar to a website. This wil
 * DAY 3: We found out a bug that popup overlaps the menu - We decided that before the menu is opened, all the popups should be hidden
 * DAY 4: Our product owner asked to add analytics tracking
 
+[View demo on Codepen](http://codepen.io/maciejsawicki/pen/VmogqW)
+
 Without the extensibleFunction, on DAY 3 you would scatter your code accross different files. After some time a simple function to open a sidebar will become bloated and harder to maintain.  
 
 With extensibleFunction, you can keep the fix for the popups in the same file/folder that is responsible for popups. Consider organising your folders per "user story", for example
 * ShowingSidebar
 * ShowingPopup
 * SidebarAnalytics
-
-[View demo on Codepen](http://codepen.io/maciejsawicki/pen/VmogqW)
-
 
 ## Quick start
 
