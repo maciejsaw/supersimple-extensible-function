@@ -98,6 +98,6 @@ console.log(showSidebar.exportedVars.yourVarName);
 * There might me more disadvantages here that I'm not aware of, since I'm not a super experienced JS dev
 
 ## Also see
-* For more advanced apps you probably want to see  [JS Module patter](https://toddmotto.com/mastering-the-module-pattern/)
+* For more advanced apps you probably want to see  [JS Module pattern](https://toddmotto.com/mastering-the-module-pattern/)
 
 
