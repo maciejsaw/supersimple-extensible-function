@@ -8,6 +8,7 @@ you can chunk it into separate function submodules that can be added separately.
 * You can disable the "extension" when needed for debugging.
 
 ## Demo with annotations
+[View on Codepen](http://codepen.io/maciejsawicki/pen/VmogqW)
 
 ## Quick start
 
@@ -41,3 +42,24 @@ showSidebar.extendBefore(function() {
 ```
 
 ## List of methods
+
+## Need a variable that will be accessible for all the "extensions"?
+You can store it in the function object under ```showSidebar.exportedVars```
+
+Just add your var name
+```javascript
+showSidebar.exportedVars.yourVarName = "Your Var value" 
+```
+
+Then this value is accessible in all other functions/extensions
+```javascript
+console.log(showSidebar.exportedVars.yourVarName);
+```
+
+## Disadvantages:
+* Security: with the basic simple approach here, the functions are global, though it might be possible to limit their scope by namespacing. Anyway, this is probably not the best security.
+
+## Also see
+* For more advanced apps you probably want to see  [JS Module patter](https://toddmotto.com/mastering-the-module-pattern/)
+
+
