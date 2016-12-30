@@ -69,6 +69,7 @@ Example:
 
 ### Running the extensible function
 * run
+
 Example:
 ```javascript
 showSidebar.run()
