@@ -12,21 +12,21 @@ you can chunk it into separate function submodules that can be added separately.
 
 ## Quick start
 
-1. Download the script and use it in your code
+1) Download the script and use it in your code
 
-2. Declare the extensible function
+2) Declare the extensible function
 ```javascript
 showSidebar = new extensibleFunction();
 ```
 
-3. Set its core functionality
+3) Set its core functionality
 ```javascript
 showSidebar.setCoreFunctionality(function() {
   $('.sidebar').toggleClass('hidden');
 });
 ```
 
-4. Bind the function wherever you want
+4) Bind the function wherever you want
 ```javascript
 $(document).on('click', '.sidebar-button', function() {
   //this will run the function including all extensions, even if they were added later
@@ -34,7 +34,7 @@ $(document).on('click', '.sidebar-button', function() {
 });
 ```
 
-5. In future you can extend the function in different place
+5) In future you can extend the function in different place
 ```javascript
 showSidebar.extendBefore(function() {
   //do something before the core functionality
