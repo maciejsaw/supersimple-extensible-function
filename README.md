@@ -55,12 +55,12 @@ showSidebar.extendBefore(function() {
 ```
 
 ## List of methods
-Each extensible function has 5 phases:
-- at the beginning
-- before core functionality
-- core functionality
-- after core functionality
-- at the end
+> Each extensible function has 5 phases:
+> 1. at the beginning
+> 2. before core functionality
+> 3. core functionality
+> 4. after core functionality
+> 5. at the end
 
 ### Setting up the core functionality
 * setCoreFunctionality
