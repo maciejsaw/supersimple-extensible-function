@@ -97,6 +97,7 @@ console.log(showSidebar.exportedVars.yourVarName);
 
 ## Disadvantages:
 * Security: with the basic simple approach here, the functions are global, though it might be possible to limit their scope by namespacing. Anyway, this is probably not the best security.
+* There might me more disadvantages here that I'm not aware of
 
 ## Also see
 * For more advanced apps you probably want to see  [JS Module patter](https://toddmotto.com/mastering-the-module-pattern/)
